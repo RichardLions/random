@@ -2,7 +2,7 @@
 
 ## Features
 
-Random Bool, int32_t and float_t:
+Random bool, int32_t and float_t:
 
 ```cpp
 // Returns true/false
