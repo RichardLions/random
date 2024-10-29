@@ -6,7 +6,4 @@
   <ItemGroup>
     <ClInclude Include="random.h" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="README.md" />
-  </ItemGroup>
 </Project>
