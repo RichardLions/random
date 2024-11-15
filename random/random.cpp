@@ -18,6 +18,12 @@ namespace Random
         return distribution(GetRandomGenerator());
     }
 
+    bool RandomBool(const float_t probability)
+    {
+        std::bernoulli_distribution distribution{probability};
+        return distribution(GetRandomGenerator());
+    }
+
     int32_t RandomInRange(const int32_t min, const int32_t max)
     {
         std::uniform_int_distribution<int32_t> distribution(min, max);
