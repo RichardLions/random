@@ -1,19 +1,14 @@
 #pragma once
 
-#include <random>
 #include "random.h"
 
 namespace Random
 {
-    namespace
+    RandomGenerator& GetRandomGenerator()
     {
-        using RandomGenerator = std::mt19937;
-        inline RandomGenerator& GetRandomGenerator()
-        {
-            static std::random_device device{};
-            static RandomGenerator generator{device()}; // Seed
-            return generator;
-        }
+        static std::random_device device{};
+        static RandomGenerator generator{device()}; // Seed
+        return generator;
     }
 
     bool RandomBool()
