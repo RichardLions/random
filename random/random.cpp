@@ -18,9 +18,9 @@ namespace Random
         return distribution(GetRandomGenerator());
     }
 
-    bool RandomBool(const float_t probability)
+    bool RandomBool(const float_t trueProbability)
     {
-        std::bernoulli_distribution distribution{probability};
+        std::bernoulli_distribution distribution{trueProbability};
         return distribution(GetRandomGenerator());
     }
 
